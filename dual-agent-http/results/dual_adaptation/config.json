@@ -1,0 +1,12 @@
+{
+  "experiment": "dual_adaptation",
+  "seed": 42,
+  "rounds": 5,
+  "attack_requests": 12,
+  "benign_requests": 12,
+  "max_requests": 120,
+  "max_runtime_seconds": 30,
+  "request_timeout_seconds": 2.0,
+  "attacker_plan": null,
+  "defender_plan": null
+}

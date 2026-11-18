@@ -1,0 +1,155 @@
+{
+  "config": {
+    "experiment": "static",
+    "seed": 42,
+    "rounds": 5,
+    "attack_requests": 12,
+    "benign_requests": 12,
+    "max_requests": 120,
+    "max_runtime_seconds": 30,
+    "request_timeout_seconds": 2.0,
+    "attacker_plan": null,
+    "defender_plan": null
+  },
+  "aggregate": {
+    "tp": 0,
+    "fn": 60,
+    "fp": 33,
+    "tn": 27,
+    "detection_rate": 0.0,
+    "false_positive_rate": 0.55,
+    "precision": 0.0,
+    "f1": 0.0,
+    "attack_success_rate": 1.0,
+    "mean_http_latency_ms": 0.16603612360389283
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "policy": [
+        "amber"
+      ],
+      "tp": 0,
+      "fn": 12,
+      "fp": 6,
+      "tn": 6,
+      "detection_rate": 0.0,
+      "false_positive_rate": 0.5,
+      "precision": 0.0,
+      "f1": 0.0,
+      "attack_success_rate": 1.0,
+      "mean_http_latency_ms": 0.18641499870379144,
+      "attacker_reward": 12,
+      "defender_reward": -12
+    },
+    {
+      "round": 2,
+      "policy": [
+        "amber"
+      ],
+      "tp": 0,
+      "fn": 12,
+      "fp": 7,
+      "tn": 5,
+      "detection_rate": 0.0,
+      "false_positive_rate": 0.5833333333333334,
+      "precision": 0.0,
+      "f1": 0.0,
+      "attack_success_rate": 1.0,
+      "mean_http_latency_ms": 0.1479704127026101,
+      "attacker_reward": 12,
+      "defender_reward": -14
+    },
+    {
+      "round": 3,
+      "policy": [
+        "amber"
+      ],
+      "tp": 0,
+      "fn": 12,
+      "fp": 7,
+      "tn": 5,
+      "detection_rate": 0.0,
+      "false_positive_rate": 0.5833333333333334,
+      "precision": 0.0,
+      "f1": 0.0,
+      "attack_success_rate": 1.0,
+      "mean_http_latency_ms": 0.15367546196406087,
+      "attacker_reward": 12,
+      "defender_reward": -14
+    },
+    {
+      "round": 4,
+      "policy": [
+        "amber"
+      ],
+      "tp": 0,
+      "fn": 12,
+      "fp": 5,
+      "tn": 7,
+      "detection_rate": 0.0,
+      "false_positive_rate": 0.4166666666666667,
+      "precision": 0.0,
+      "f1": 0.0,
+      "attack_success_rate": 1.0,
+      "mean_http_latency_ms": 0.17426912866843244,
+      "attacker_reward": 12,
+      "defender_reward": -10
+    },
+    {
+      "round": 5,
+      "policy": [
+        "amber"
+      ],
+      "tp": 0,
+      "fn": 12,
+      "fp": 8,
+      "tn": 4,
+      "detection_rate": 0.0,
+      "false_positive_rate": 0.6666666666666666,
+      "precision": 0.0,
+      "f1": 0.0,
+      "attack_success_rate": 1.0,
+      "mean_http_latency_ms": 0.16785061598056927,
+      "attacker_reward": 12,
+      "defender_reward": -16
+    }
+  ],
+  "adaptation": {
+    "detection_delta": 0.0,
+    "attack_success_delta": 0.0,
+    "policy_changes": 0,
+    "attack_scenario_counts": [
+      {
+        "probe_amber": 0,
+        "probe_blue": 12,
+        "probe_green": 0
+      },
+      {
+        "probe_amber": 0,
+        "probe_blue": 12,
+        "probe_green": 0
+      },
+      {
+        "probe_amber": 0,
+        "probe_blue": 12,
+        "probe_green": 0
+      },
+      {
+        "probe_amber": 0,
+        "probe_blue": 12,
+        "probe_green": 0
+      },
+      {
+        "probe_amber": 0,
+        "probe_blue": 12,
+        "probe_green": 0
+      }
+    ]
+  },
+  "decision_latency_ms": {
+    "attacker_mean": 0.0002492607260743777,
+    "defender_mean": 0.0008579925633966923
+  },
+  "limitations": "Synthetic game markers; scripted policies; detection means blocked request; no LLM capability claim."
+}
